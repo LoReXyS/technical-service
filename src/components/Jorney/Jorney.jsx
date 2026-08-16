@@ -1,9 +1,9 @@
 import styles from './Jorney.module.css';
-
+import img from './imgs/Sub.png';
 export default function Jorney() {
   return (
     <section className={styles.jorney}>
-      <div className={styles.container}>
+      <div className={`${styles.div} container`}>
         <ul className={styles.list1}>
           <li className={styles.item1}>
             <h2 className={styles.title}>Our Journey</h2>
@@ -18,24 +18,23 @@ export default function Jorney() {
               qui enim commodi.
             </p>
           </li>
+          <ul className={styles.list2}>
+            <li className={styles.item2}>
+              <h2 className={styles.info}>200k+</h2>
+              <p className={styles.plusInfo}>Happy Customers</p>
+            </li>
+            <li className={styles.item2}>
+              <h2 className={styles.info}>10k+</h2>
+              <p className={styles.plusInfo}>Service For Clients</p>
+            </li>
+            <li className={styles.item2}>
+              <h2 className={styles.info}>16+</h2>
+              <p className={styles.plusInfo}>Years Of Experience</p>
+            </li>
+          </ul>
         </ul>
 
-        <ul className={styles.list2}>
-          <li className={styles.item2}>
-            <h2 className={styles.info}>200k+</h2>
-            <p className={styles.plusInfo}>Happy Customers</p>
-          </li>
-
-          <li className={styles.item2}>
-            <h2 className={styles.info}>10k+</h2>
-            <p className={styles.plusInfo}>Service For Clients</p>
-          </li>
-
-          <li className={styles.item2}>
-            <h2 className={styles.info}>16+</h2>
-            <p className={styles.plusInfo}>Years Of Experience</p>
-          </li>
-        </ul>
+        <img src={img} alt="" className={styles.img} />
       </div>
     </section>
   );
