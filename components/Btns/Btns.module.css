@@ -1,0 +1,36 @@
+.section {
+  background-color: rgba(20, 20, 20, 1);
+  padding: 50px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+}
+.btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btnsBtn {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+  box-sizing: border-box;
+  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border-radius: 12px;
+  background: var(--Grey-10, rgba(26, 26, 26, 1));
+  transition: 0.5s ease all;
+}
+.btnsBtn:hover {
+  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  background: var(--Grey-15, rgba(38, 38, 38, 1));
+}

@@ -1,0 +1,85 @@
+.section {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+
+  gap: 20px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.item {
+  width: 580px;
+
+  height: 246px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+
+  padding: 50px;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  background-color: #121212;
+  color: #fff;
+}
+.txt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.paragraph {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.6%;
+  text-align: left;
+  transform: all;
+}
+.btn {
+  /* Button */
+  width: 134px;
+  height: 60px;
+  /* Автолейаут */
+
+  gap: 10px;
+  padding: 18px 24px 18px 24px;
+
+  box-sizing: border-box;
+  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border-radius: 10px;
+  background: var(--Grey-10, rgba(26, 26, 26, 1));
+
+  /* txt */
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 131%;
+  letter-spacing: -0.6%;
+
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: var(--Grey-10, rgb(56, 55, 55));
+}

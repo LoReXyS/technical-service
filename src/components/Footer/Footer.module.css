@@ -1,0 +1,80 @@
+.footer {
+  background-color: rgba(20, 20, 20, 1);
+  padding: 100px 162px 100px 162px;
+}
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.secondList {
+  display: flex;
+  justify-content: space-around;
+  width: 978px;
+}
+.secondItem {
+  display: flex;
+  flex-direction: column;
+}
+.navLinkItem {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: left;
+}
+.secondA {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: left;
+}
+/*  */
+.form {
+  /* Input Feild */
+  width: 283px;
+  height: 26px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px 18px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+.input {
+  border: none;
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  box-shadow: none;
+
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  color: white;
+}

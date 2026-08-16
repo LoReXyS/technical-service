@@ -1,0 +1,156 @@
+.section {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  padding: 20px;
+}
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.listItem {
+  /* Card */
+  width: 512px;
+  height: 719px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: stretch;
+
+  gap: 30px;
+  padding: 40px;
+
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  background: rgba(20, 20, 20, 1);
+  border: 2px solid rgba(80, 80, 80, 1); /* зробив більш видимий */
+}
+
+.itemImg {
+  border-radius: 10px;
+}
+.itemTxt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.itemP {
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+}
+.itemReadrMore {
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: white;
+}
+.listBtn {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.btnItemBtn {
+  box-sizing: border-box;
+  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border-radius: 28px;
+  background: var(--Grey-10, rgba(26, 26, 26, 1));
+
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: all 0.5s;
+}
+.btnItemBtn:hover {
+  background: rgb(54, 54, 54);
+}
+.listPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceBtn {
+  /* Button */
+  width: 207px;
+  height: 63px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 19px 12px 19px;
+
+  border-radius: 10px;
+  background: rgba(231, 192, 26, 1);
+}
+.linkTo {
+  color: var(--Absolute-Black, rgba(0, 0, 0, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.priceBtn:hover {
+  background: rgb(230, 198, 60);
+}
+.priceItemP {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.priceItemTxt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.priceItem:first-child {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}

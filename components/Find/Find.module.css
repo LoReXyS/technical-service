@@ -1,0 +1,72 @@
+.section {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  background-image: url(./Imgs/CTA.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 30px;
+}
+.conatiner {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.conatiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.txt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.paragraph {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.btn {
+  /* Button */
+  width: 179px;
+  height: 63px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 24px 18px 24px;
+
+  border-radius: 10px;
+  background: rgba(231, 192, 26, 1);
+
+  color: rgba(0, 0, 0, 1);
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: rgb(225, 203, 104);
+}
+.content {
+  width: 800px;
+}

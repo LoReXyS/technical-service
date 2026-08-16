@@ -1,0 +1,36 @@
+.section {
+  background: var(--Grey-10, rgba(26, 26, 26, 1));
+  /* padding-top: 60px; */
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listFirst {
+  display: flex;
+}
+.firstTxt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: left;
+}
+
+.listSecond {
+  display: flex;
+}
+.itemSecond {
+  margin-right: 10px;
+}

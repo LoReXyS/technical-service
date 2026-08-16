@@ -1,0 +1,78 @@
+.Servises {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  padding: 40px;
+}
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.txt {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.servisesP {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 900px;
+}
+.servisesBtn {
+  /* Button */
+  width: 183px;
+  height: 63px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 24px 18px 24px;
+
+  box-sizing: border-box;
+  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border-radius: 10px;
+  background: var(--Grey-10, rgba(26, 26, 26, 1));
+  transition: 0.5s ease all;
+}
+.servisesA {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.servisesBtn:hover {
+  background: var(--Grey-08, rgb(58, 57, 57));
+}
+.servisesList {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*  */
+.servisesComents {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  padding: 40px;
+}
+/*  */
+.servisesQuestions {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+  padding: 40px;
+}
