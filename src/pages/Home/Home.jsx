@@ -6,9 +6,9 @@ import Servises from '../../components/Servises/Servises';
 export default function Home() {
   return (
     <>
-      <HeroHome></HeroHome>
-      <Btns></Btns>
-      <Servises></Servises>
+      <HeroHome />
+      <Btns />
+      <Servises />
     </>
   );
 }

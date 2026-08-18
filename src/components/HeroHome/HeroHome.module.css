@@ -1,11 +1,17 @@
+.hero {
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
+}
 .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 1);
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
 }
 
 .left {
-  background: rgba(0, 0, 0, 1);
+  background: var(--Grey-08, rgba(20, 20, 20, 1));
   width: 920px;
   /* height: 750px; */
   display: flex;
@@ -133,4 +139,9 @@
 .rigth {
   width: 920px;
   height: 750px;
+}
+.img {
+  /* Drill */
+  width: 650px;
+  /* height: 814px; */
 }
