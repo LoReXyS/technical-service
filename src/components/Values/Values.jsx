@@ -25,7 +25,7 @@ export default function Values() {
             <ul className={styles.infoItem}>
               <li className={styles.itemLi}>
                 <div className={styles.itemDiv}>
-                  <img src={star} alt='' className={styles.img1} />
+                  <img src={star} alt="" className={styles.img1} />
                   <h2 className={styles.txtTitle}>Trust</h2>
                 </div>
                 <p className={styles.lorem}>
@@ -35,7 +35,7 @@ export default function Values() {
               </li>
               <li className={styles.itemLi}>
                 <div className={styles.itemDiv}>
-                  <img src={hat} alt='' className={styles.img1} />
+                  <img src={hat} alt="" className={styles.img1} />
                   <h2 className={styles.txtTitle}>Excellence</h2>
                 </div>
                 <p className={styles.lorem}>
@@ -48,7 +48,7 @@ export default function Values() {
             <ul className={styles.infoItem}>
               <li className={styles.itemLi}>
                 <div className={styles.itemDiv}>
-                  <img src={group} alt='' className={styles.img1} />
+                  <img src={group} alt="" className={styles.img1} />
                   <h2 className={styles.txtTitle}>Client-Centric</h2>
                 </div>
                 <p className={styles.lorem}>
@@ -58,7 +58,7 @@ export default function Values() {
               </li>
               <li className={styles.itemLi}>
                 <div className={styles.itemDiv}>
-                  <img src={star} alt='' className={styles.img1} />
+                  <img src={star} alt="" className={styles.img1} />
                   <h2 className={styles.txtTitle}>Our Commitment</h2>
                 </div>
                 <p className={styles.lorem}>
