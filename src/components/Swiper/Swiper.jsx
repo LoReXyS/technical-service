@@ -7,7 +7,6 @@ import 'swiper/css';
 
 import styles from './Swiper.module.css';
 
-// КАРТИНКИ
 import image1 from './images/image1.png';
 import image2 from './images/image2.png';
 import image3 from './images/image3.png';
@@ -26,7 +25,7 @@ export default function Swiper() {
 
   return (
     <section className={styles.gallery}>
-      {/* THUMBNAILS */}
+      {/* Маленькі картинки */}
       <SwiperSlider
         modules={[Thumbs]}
         onSwiper={setThumbsSwiper}
@@ -36,7 +35,7 @@ export default function Swiper() {
         className={styles.thumbs}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className={styles.thumbSlide}>
             <img
               src={image}
               alt={`House ${index + 1}`}
@@ -46,20 +45,20 @@ export default function Swiper() {
         ))}
       </SwiperSlider>
 
-      {/* MAIN IMAGE */}
+      {/* Велика картинка */}
       <SwiperSlider
         modules={[Thumbs]}
         onSwiper={setSwiper}
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
-        onSlideChange={(swiper) => {
-          setActiveIndex(swiper.activeIndex);
+        onSlideChange={(swiperInstance) => {
+          setActiveIndex(swiperInstance.activeIndex);
         }}
         className={styles.mainSwiper}
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className={styles.mainSlide}>
             <img
               src={image}
               alt={`House ${index + 1}`}
@@ -69,10 +68,10 @@ export default function Swiper() {
         ))}
       </SwiperSlider>
 
-      {/* BOTTOM CONTROLS */}
+      {/* Кнопки */}
       <div className={styles.bottomNavigation}>
         <button
-          type='button'
+          type="button"
           className={styles.arrowButton}
           onClick={() => swiper?.slidePrev()}
         >
@@ -89,7 +88,7 @@ export default function Swiper() {
         </div>
 
         <button
-          type='button'
+          type="button"
           className={styles.arrowButton}
           onClick={() => swiper?.slideNext()}
         >
