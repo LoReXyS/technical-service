@@ -1,0 +1,63 @@
+.div {
+  /* Container */
+  width: 600px;
+  height: 621px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+
+  box-sizing: border-box;
+  border: 1px solid var(--Grey-15, rgba(38, 38, 38, 1));
+  border-radius: 12px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h2 {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.p {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.li {
+  /* Container */
+  width: 450px;
+  height: 63px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px 18px 24px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  border-left: 1px solid var(--Purple-60, rgba(112, 59, 247, 1));
+  background: linear-gradient(
+    90deg,
+    rgba(25.5, 25.5, 25.5, 1) 0%,
+    rgba(25.5, 25.5, 25.5, 0) 100%
+  );
+}

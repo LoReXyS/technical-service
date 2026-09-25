@@ -1,0 +1,353 @@
+.inquire {
+  width: 100%;
+  padding: 70px 0;
+  background: #141414;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+}
+
+/* LEFT SIDE */
+
+.info {
+  padding-top: 7px;
+}
+
+.stars {
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.stars span:first-child {
+  color: #d8d8d8;
+  font-size: 22px;
+}
+
+.stars span:nth-child(2) {
+  font-size: 12px;
+}
+
+.stars span:nth-child(3) {
+  font-size: 8px;
+}
+
+.info h2 {
+  margin: 0 0 14px;
+
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.info p {
+  max-width: 285px;
+  margin: 0;
+
+  color: #7c7c7c;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+/* FORM */
+
+.form {
+  border: 1px solid #292929;
+  border-radius: 7px;
+
+  padding: 27px;
+
+  background: #141414;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  margin-bottom: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.full {
+  margin-bottom: 18px;
+}
+
+.field label {
+  margin-bottom: 9px;
+
+  color: #eeeeee;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+
+  border: 1px solid #222;
+  border-radius: 5px;
+
+  background: #1b1b1b;
+  color: #d5d5d5;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.field input {
+  height: 37px;
+  padding: 0 11px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #555;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: #444;
+}
+
+/* SELECT */
+
+.field select {
+  height: 39px;
+  padding: 0 11px;
+
+  appearance: none;
+
+  cursor: pointer;
+}
+
+.field select option {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+/* TEXTAREA */
+
+.field textarea {
+  height: 92px;
+
+  padding: 12px 11px;
+
+  resize: none;
+}
+
+/* BOTTOM */
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 26px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #777;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 15px;
+  height: 15px;
+
+  accent-color: #f0c400;
+
+  cursor: pointer;
+}
+
+.checkbox a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.bottom button {
+  height: 33px;
+
+  padding: 0 27px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #f0c400;
+  color: #111;
+
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bottom button:hover {
+  background: #ffd21a;
+}
+
+.bottom button:active {
+  transform: translateY(1px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .inquire {
+    padding: 50px 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .info p {
+    max-width: 500px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .inquire {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .info h2 {
+    font-size: 24px;
+  }
+
+  .form {
+    padding: 20px 15px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .bottom button {
+    width: 100%;
+  }
+}
+.info h2 {
+  margin: 0 0 18px;
+
+  font-family: Arial, sans-serif;
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.info p {
+  max-width: 390px;
+  margin: 0;
+
+  color: #7c7c7c;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.field label {
+  margin-bottom: 10px;
+
+  color: #eeeeee;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.field input,
+.field textarea,
+.field select {
+  font-size: 13px;
+}
+
+.field input {
+  height: 48px;
+  padding: 0 13px;
+}
+
+.field select {
+  height: 48px;
+  padding: 0 13px;
+}
+
+.field textarea {
+  height: 110px;
+  padding: 14px 13px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #777;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.bottom button {
+  height: 42px;
+
+  padding: 0 30px;
+
+  font-size: 12px;
+}

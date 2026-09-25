@@ -87,3 +87,118 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* ============================= */
+/*        ПЛАВНІ АНІМАЦІЇ        */
+/* ============================= */
+
+/* Всі кнопки */
+button {
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    opacity 0.5s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+/* ============================= */
+/*           ПОСИЛАННЯ           */
+/* ============================= */
+
+a {
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.65;
+}
+
+/* ============================= */
+/*           КАРТКИ              */
+/* ============================= */
+
+.card {
+  transition:
+    background-color 0.6s ease,
+    box-shadow 0.6s ease,
+    border-color 0.6s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/*          ЗОБРАЖЕННЯ           */
+/* ============================= */
+
+img {
+  transition:
+    opacity 0.6s ease,
+    filter 0.6s ease;
+}
+
+img:hover {
+  opacity: 0.9;
+}
+
+/* ============================= */
+/*            INPUT              */
+/* ============================= */
+
+input,
+textarea,
+select {
+  transition:
+    border-color 0.5s ease,
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================= */
+/*          НАВІГАЦІЯ            */
+/* ============================= */
+
+nav a {
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* ============================= */
+/*       ЗАГОЛОВКИ / ТЕКСТ       */
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+}

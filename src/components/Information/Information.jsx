@@ -5,10 +5,14 @@ export default function Information() {
     <>
       <section className={styles.information}>
         <div className={styles.container}>
-          <div className={styles.price}>
-            <span>
-              <h3>Services</h3>
-              <p>Dubai, United Arab Emirates</p>
+          <div className={styles.priceList}>
+            <span className={styles.span1}>
+              <h3 className={styles.servicesTxt}>Services</h3>
+              <p className={styles.location}>Dubai, United Arab Emirates</p>
+            </span>
+            <span className={styles.span2}>
+              <p className={styles.price}>price</p>
+              <h3 className={styles.priceCosts}>$1,000</h3>
             </span>
           </div>
           <div>

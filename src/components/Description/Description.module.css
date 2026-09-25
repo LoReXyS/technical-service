@@ -1,43 +1,4 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-}
-.servicesTxt {
-  color: var(--Absolute-White, rgba(255, 255, 255, 1));
-
-  font-family: 'Urbanist';
-  font-style: SemiBold;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-right: 10px;
-}
-.location {
-  color: var(--Absolute-White, rgba(255, 255, 255, 1));
-
-  font-family: 'Urbanist';
-  font-style: Medium;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.price {
-  color: var(--Grey-60, rgba(153, 153, 153, 1));
-
-  font-family: 'Urbanist';
-  font-style: Medium;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.priceCosts {
+.h3 {
   color: var(--Absolute-White, rgba(255, 255, 255, 1));
 
   font-family: 'Urbanist';
@@ -48,11 +9,59 @@
   letter-spacing: 0%;
   text-align: left;
 }
-.priceList {
+.paragraph {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+
+  /* Paragraph */
+  max-width: 683px;
+}
+.info {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.div {
+  /* Container */
+  width: 590px;
+  height: 374px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--Grey-15, rgba(38, 38, 38, 1));
+  border-radius: 12px;
+}
+.list {
   display: flex;
   justify-content: space-between;
 }
-.span1 {
+.li {
+  /* Container */
+  width: 311.5px;
+  height: 73px;
+  /* Автолейаут */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
 }
