@@ -32,3 +32,32 @@
   border-radius: 12px;
   background: var(--Grey-10, rgba(26, 26, 26, 1));
 }
+.h2 {
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+
+  font-family: 'Urbanist';
+  font-style: SemiBold;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.p {
+  color: var(--Grey-60, rgba(153, 153, 153, 1));
+
+  font-family: 'Urbanist';
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
