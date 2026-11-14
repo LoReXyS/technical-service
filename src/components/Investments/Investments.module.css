@@ -1,0 +1,122 @@
+.section {
+  box-sizing: border-box;
+  padding: 45px 20px 80px;
+  background: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.decoration {
+  margin-bottom: 10px;
+  color: #777;
+  font-size: 23px;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.description {
+  margin-bottom: 25px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.banner {
+  flex: 1;
+  min-height: 180px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #292929;
+  border-radius: 9px;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 15px,
+      rgba(255, 255, 255, 0.025) 16px,
+      transparent 17px
+    ),
+    #171717;
+}
+
+.banner h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.banner p {
+  color: #999;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #292929;
+  border-radius: 7px;
+  background: #101010;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #753cf5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  align-content: center;
+  padding: 8px;
+  border: 1px solid #202020;
+  border-radius: 10px;
+  background: #151515;
+}
+
+.grid > * {
+  min-height: 175px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding: 45px 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

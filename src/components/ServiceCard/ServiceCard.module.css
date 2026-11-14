@@ -1,0 +1,51 @@
+.card {
+  min-height: 145px;
+  padding: 25px 24px;
+  border: 1px solid #252525;
+  border-radius: 9px;
+  background: #131313;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+}
+
+.card:hover {
+  border-color: #7541d9;
+  background: #17151c;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #42306b;
+  border-radius: 50%;
+  color: #a477ff;
+  background: #19151f;
+}
+
+.icon span {
+  font-size: 19px;
+}
+
+.title {
+  color: #f3f3f3;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.description {
+  color: #999;
+  font-size: 12px;
+  line-height: 1.7;
+}
