@@ -1,7 +1,8 @@
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px 20px;
 
   display: flex;
   flex-direction: column;
@@ -35,7 +36,10 @@
 }
 .upperList {
   display: flex;
+  align-items: center;
   gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 .upper {
   display: flex;
@@ -48,32 +52,115 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+.logoLink {
+  flex: 0 0 auto;
+}
+.lowerImg {
+  display: block;
+  width: 150px;
+  height: auto;
 }
 .lowerList {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
 }
 .lowerA {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--Absolute-White, rgba(255, 255, 255, 1));
-
   font-family: 'Urbanist';
-  font-style: Medium;
   font-size: 18px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0%;
   text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.lowerNav {
+  min-width: 0;
+}
+.active {
+  color: #e7c01a;
 }
 .lowerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
   background: var(--Grey-10, rgba(26, 26, 26, 1));
-  border: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
   padding: 10px 20px;
   transition: all 0.3s ease;
 }
 .lowerBtn:hover {
   box-sizing: border-box;
-  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border: 1px solid var(--Grey-15, rgba(38, 38, 38, 1));
   border-radius: 10px;
   background: var(--Grey-08, rgba(20, 20, 20, 1));
   padding: 10px 20px;
+}
+
+@media (max-width: 900px) {
+  .lower {
+    flex-wrap: wrap;
+  }
+
+  .lowerNav {
+    order: 3;
+    flex: 1 1 100%;
+  }
+
+  .lowerList {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 10px 14px;
+  }
+
+  .upperList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 10px;
+  }
+
+  .upperTxt,
+  .upperA {
+    font-size: 14px;
+  }
+
+  .lower {
+    gap: 10px;
+  }
+
+  .lowerImg {
+    width: 112px;
+  }
+
+  .lowerBtn {
+    padding: 8px 12px;
+  }
+
+  .lowerA {
+    font-size: 14px;
+  }
+
+  .lowerList {
+    gap: 4px;
+  }
+
+  .lowerList .lowerA {
+    padding: 6px 8px;
+  }
 }

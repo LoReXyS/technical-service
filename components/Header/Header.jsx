@@ -1,9 +1,5 @@
 import styles from './Header.module.css'
 import {
-    useLocation,
-    useNavigate,
-    useParams,
-    NavLink,
     Link
 } from 'react-router-dom';
 import image from '../Header/Img/logo-modified.png'
@@ -12,7 +8,6 @@ import dataLogs from './HeaderData'
 export default function Header() {
     const data = dataLogs
     const routes = ['/', '/about', '/detail', '/services'];
-    console.log(data);
 
     return (
         <header className={styles.header}>

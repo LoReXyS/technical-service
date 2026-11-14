@@ -2,15 +2,7 @@ import styles from './Footer.module.css'
 import image from './Img/logo-modified.png'
 import tg from './Img/tg.png'
 import email from './Img/email.png'
-import {
-    useLocation,
-    useNavigate,
-    useParams,
-    NavLink,
-    Link
-} from 'react-router-dom';
-import Home from '../../pages/Home/Home';
-import AboutUs from '../../pages/AboutUs/AboutUs';
+import { NavLink } from 'react-router-dom';
 export default function Footer() {
     return (
         <>

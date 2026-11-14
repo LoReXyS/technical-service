@@ -344,6 +344,16 @@
   font-size: 12px;
 }
 
+@media (max-width: 600px) {
+  .info h2 {
+    font-size: 26px;
+  }
+
+  .info p {
+    max-width: none;
+  }
+}
+
 .bottom button {
   height: 42px;
 

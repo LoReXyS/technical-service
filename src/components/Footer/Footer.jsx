@@ -2,20 +2,12 @@ import styles from './Footer.module.css'
 import image from './Img/logo-modified.png'
 import tg from './Img/tg.png'
 import email from './Img/email.png'
-import {
-    useLocation,
-    useNavigate,
-    useParams,
-    NavLink,
-    Link
-} from 'react-router-dom';
-import Home from '../../pages/Home/Home';
-import AboutUs from '../../pages/AboutUs/AboutUs';
+import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
         <>
             <footer className={styles.footer}>
-                <div className={`${styles.containter} ${styles.content}`}>
+                <div className={`${styles.container} ${styles.content}`}>
                     <ul className={styles.firstList}>
                         <li className={styles.firstItem}><img src={image} alt="image" /></li>
                         <li className={styles.firstItem}>
@@ -26,52 +18,52 @@ export default function Footer() {
                     <ul className={styles.secondList}>
                         <li className={styles.secondItem}>
                             <nav>
-                                <NavLink to={"/"} className={styles.navLinkItem} >Home</NavLink >
+                                <Link to="/" className={styles.navLinkItem}>Home</Link>
                             </nav>
-                            <a href='' className={styles.secondA}>Hero Section</a>
-                            <a href='' className={styles.secondA}>Features</a>
-                            <a href='' className={styles.secondA}>Services</a>
-                            <a href='' className={styles.secondA}>Rates</a>
-                            <a href='' className={styles.secondA}>FAQ’s</a>
+                            <Link to="/" className={styles.secondA}>Hero Section</Link>
+                            <Link to="/services" className={styles.secondA}>Features</Link>
+                            <Link to="/services" className={styles.secondA}>Services</Link>
+                            <Link to="/detail" className={styles.secondA}>Rates</Link>
+                            <Link to="/detail#questions" className={styles.secondA}>FAQ’s</Link>
                         </li>
                         <li className={styles.secondItem}>
                             <nav>
-                                <NavLink to={"/aboutUs"} className={styles.navLinkItem} >About Us</NavLink >
+                                <Link to="/about" className={styles.navLinkItem}>About Us</Link>
                             </nav>
 
-                            <a href='' className={styles.secondA}>Our Story</a>
-                            <a href='' className={styles.secondA}>Our Works</a>
-                            <a href='' className={styles.secondA}>How It Works</a>
-                            <a href='' className={styles.secondA}>Our Team</a>
-                            <a href='' className={styles.secondA}>Our Clients</a>
+                            <Link to="/about" className={styles.secondA}>Our Story</Link>
+                            <Link to="/about" className={styles.secondA}>Our Works</Link>
+                            <Link to="/about" className={styles.secondA}>How It Works</Link>
+                            <Link to="/about" className={styles.secondA}>Our Team</Link>
+                            <Link to="/about" className={styles.secondA}>Our Clients</Link>
 
                         </li>
                         <li className={styles.secondItem}>
                             <nav>
-                                <NavLink to={'/'} className={styles.navLinkItem}>Details</NavLink >
+                                <Link to="/detail" className={styles.navLinkItem}>Details</Link>
                             </nav>
-                            <a href="" className={styles.secondA}>Portfolio</a>
-                            <a href="" className={styles.secondA}>Categories</a>
+                            <Link to="/detail" className={styles.secondA}>Portfolio</Link>
+                            <Link to="/detail" className={styles.secondA}>Categories</Link>
                         </li>
                         <li className={styles.secondItem}>
                             <nav>
-                                <NavLink to={'/'} className={styles.navLinkItem}>Services</NavLink >
+                                <Link to="/services" className={styles.navLinkItem}>Services</Link>
                             </nav>
-                            <a href="" className={styles.secondA}>Air Condition Repairing</a>
-                            <a href="" className={styles.secondA}>Plumbing</a>
-                            <a href="" className={styles.secondA}>Painting</a>
-                            <a href="" className={styles.secondA}>Electrical</a>
-                            <a href="" className={styles.secondA}>Refrigerator Repairing </a>
-                            <a href="" className={styles.secondA}>Handyman Services</a>
-                            <a href="" className={styles.secondA}>Wood Services </a>
-                            <a href="" className={styles.secondA}>Tile Fixing</a>
+                            <Link to="/services" className={styles.secondA}>Air Condition Repairing</Link>
+                            <Link to="/services" className={styles.secondA}>Plumbing</Link>
+                            <Link to="/services" className={styles.secondA}>Painting</Link>
+                            <Link to="/services" className={styles.secondA}>Electrical</Link>
+                            <Link to="/services" className={styles.secondA}>Refrigerator Repairing</Link>
+                            <Link to="/services" className={styles.secondA}>Handyman Services</Link>
+                            <Link to="/services" className={styles.secondA}>Wood Services</Link>
+                            <Link to="/services" className={styles.secondA}>Tile Fixing</Link>
                         </li>
                         <li className={styles.secondItem}>
                             <nav>
-                                <NavLink to={'/'} className={styles.navLinkItem}>Contact Us</NavLink >
+                                <Link to="/detail" className={styles.navLinkItem}>Contact Us</Link>
                             </nav>
-                            <a href="" className={styles.secondA}>Contact Form</a>
-                            <a href="" className={styles.secondA}>Contact Number</a>
+                            <Link to="/detail" className={styles.secondA}>Contact Form</Link>
+                            <Link to="/detail" className={styles.secondA}>Contact Number</Link>
                         </li>
                     </ul>
                 </div>

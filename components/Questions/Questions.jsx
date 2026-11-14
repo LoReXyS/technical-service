@@ -17,12 +17,12 @@ export default function Questions() {
                         <li className={styles.item}>
                             <h2 className={styles.txt}>Is the quotations are accurate?
                             </h2>
-                            <p className={styles.paragraph}>Hic voluptatem sapiente id galisum omnis aut accusamus natus aut quia consequatur. </p>
+                            <p className={styles.paragraph}>Hic voluptatem sapiente id galisum omnis aut accusamus natus aut quia consequatur.</p>
                             <button className={styles.btn}>Read More</button>
                         </li>
                         <li className={styles.item}>
                             <h2 className={styles.txt}>How can I trust you?</h2>
-                            <p className={styles.paragraph}>Hic voluptatem sapiente id galisum omnis aut accusamus natus aut quia consequatur. </p>
+                            <p className={styles.paragraph}>Hic voluptatem sapiente id galisum omnis aut accusamus natus aut quia consequatur.</p>
                             <button className={styles.btn}>Read More</button>
                         </li>
                     </ul>

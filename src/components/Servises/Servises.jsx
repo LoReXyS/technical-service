@@ -1,4 +1,5 @@
 import styles from './Servises.module.css';
+import { Link } from 'react-router-dom';
 import ServisesList from '../ServisesList/ServisesList';
 import Coments from '../Coments/Coments';
 import Questions from '../Questions/Questions';
@@ -23,11 +24,9 @@ export default function Servises() {
               </p>
             </li>
             <li className={styles.servisesItem}>
-              <button className={styles.servisesBtn}>
-                <a href='' className={styles.servisesA}>
+              <Link to="/services" className={`${styles.servisesBtn} ${styles.servisesA}`}>
                   View All Services
-                </a>
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
@@ -44,11 +43,9 @@ export default function Servises() {
               </p>
             </li>
             <li className={styles.servisesItem}>
-              <button className={styles.servisesBtn}>
-                <a href='' className={styles.servisesA}>
+              <Link to="/services" className={`${styles.servisesBtn} ${styles.servisesA}`}>
                   View All Services
-                </a>
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
@@ -61,15 +58,13 @@ export default function Servises() {
             <li className={styles.servisesItem}>
               <p className={styles.servisesP}>
                 Hic voluptatem sapiente id galisum omnis aut accusamus natus aut
-                quia consequatur. 
+                quia consequatur.
               </p>
             </li>
             <li className={styles.servisesItem}>
-              <button className={styles.servisesBtn}>
-                <a href='' className={styles.servisesA}>
+              <Link to="/detail#questions" className={`${styles.servisesBtn} ${styles.servisesA}`}>
                   View All FAQ’s
-                </a>
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

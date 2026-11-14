@@ -51,8 +51,32 @@
 .priceList {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .span1 {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 8px 14px;
+  }
+
+  .servicesTxt {
+    font-size: 24px;
+  }
+
+  .location,
+  .price {
+    font-size: 15px;
+  }
+
+  .priceCosts {
+    font-size: 21px;
+  }
 }

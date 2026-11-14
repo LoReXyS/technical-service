@@ -54,3 +54,35 @@
   gap: 8px;
   padding: 18px 24px 18px 24px;
 }
+
+.container,
+.listPrices,
+.aditional,
+.span {
+  min-width: 0;
+}
+
+.span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 520px) {
+  .listPricesH2 {
+    font-size: 32px;
+  }
+
+  .txt {
+    font-size: 20px;
+  }
+
+  .learnMore {
+    min-height: 50px;
+    height: auto;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}

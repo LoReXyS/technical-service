@@ -1,9 +1,5 @@
 import styles from './HeroHome.module.css';
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import image from '../HeroHome/Img/Container.png';
 export default function HeroHome() {
   return (
@@ -22,12 +18,14 @@ export default function HeroHome() {
             </p>
             <ul className={styles.leftBtnsList}>
               <li className={styles.leftItems}>
-                <button className={styles.leftItemsBtn}>Learn More</button>
+                <Link to="/about" className={styles.leftItemsBtn}>
+                  Learn More
+                </Link>
               </li>
               <li className={styles.leftItems}>
-                <button className={styles.leftItemsBtnY}>
+                <Link to="/services" className={styles.leftItemsBtnY}>
                   Browse Services
-                </button>
+                </Link>
               </li>
             </ul>
             <ul className={styles.leftListInfo}>

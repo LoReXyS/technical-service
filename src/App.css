@@ -28,6 +28,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--Grey-08, rgba(20, 20, 20, 1));
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/

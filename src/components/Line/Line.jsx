@@ -9,14 +9,14 @@ export default function Line() {
         <div className={`${styles.container} ${styles.content}`}>
           <ul className={styles.listFirst}>
             <li className={styles.itemFirst}>
-              <a href="" className={styles.firstTxt}>
+              <span className={styles.firstTxt}>
                 @2023 Estatein. All Rights Reserved.
-              </a>
+              </span>
             </li>
             <li className={styles.itemFirst}>
-              <a href="" className={styles.firstTxt}>
+              <span className={styles.firstTxt}>
                 Terms & Conditions
-              </a>
+              </span>
             </li>
           </ul>
           <ul className={styles.listSecond}>

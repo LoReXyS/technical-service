@@ -5,7 +5,6 @@ import Key from '../../components/Key/Key';
 import Questions from '../../components/Questions/Questions';
 import QuestionsW from '../../components/QuestionsW/QuestionsW';
 
-import styles from './Details.module.css';
 export default function Details() {
   return (
     <>

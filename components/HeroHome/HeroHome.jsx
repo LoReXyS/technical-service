@@ -1,9 +1,4 @@
 import styles from './HeroHome.module.css'
-import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import image from '../HeroHome/Img/Container.png'
 export default function HeroHome() {
     return (

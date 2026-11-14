@@ -27,32 +27,32 @@ export default function Inquire() {
         <form className={styles.form}>
           <div className={styles.row}>
             <div className={styles.field}>
-              <label>First Name</label>
-              <input type="text" placeholder="Enter First Name" />
+              <label htmlFor="first-name">First Name</label>
+              <input id="first-name" type="text" placeholder="Enter First Name" />
             </div>
 
             <div className={styles.field}>
-              <label>Last Name</label>
-              <input type="text" placeholder="Enter Last Name" />
+              <label htmlFor="last-name">Last Name</label>
+              <input id="last-name" type="text" placeholder="Enter Last Name" />
             </div>
           </div>
 
           <div className={styles.row}>
             <div className={styles.field}>
-              <label>Email</label>
-              <input type="email" placeholder="Enter your Email" />
+              <label htmlFor="email">Email</label>
+              <input id="email" type="email" placeholder="Enter your Email" />
             </div>
 
             <div className={styles.field}>
-              <label>Phone</label>
-              <input type="tel" placeholder="Enter Phone Number" />
+              <label htmlFor="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="Enter Phone Number" />
             </div>
           </div>
 
           <div className={`${styles.field} ${styles.full}`}>
-            <label>Selected Property</label>
+            <label htmlFor="selected-property">Selected Property</label>
 
-            <select defaultValue="seaside">
+            <select id="selected-property" defaultValue="seaside">
               <option value="seaside">
                 Seaside Serenity Villa, Malibu, California
               </option>
@@ -68,9 +68,9 @@ export default function Inquire() {
           </div>
 
           <div className={`${styles.field} ${styles.full}`}>
-            <label>Message</label>
+            <label htmlFor="message">Message</label>
 
-            <textarea placeholder="Enter your Message here..." />
+            <textarea id="message" placeholder="Enter your Message here..." />
           </div>
 
           <div className={styles.bottom}>

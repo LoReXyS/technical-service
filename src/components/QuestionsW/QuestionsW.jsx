@@ -9,15 +9,13 @@ export default function QuestionsW() {
             <li className={styles.servisesItem}>
               <p className={styles.servisesP}>
                 Hic voluptatem sapiente id galisum omnis aut accusamus natus aut
-                quia consequatur. 
+                quia consequatur.
               </p>
             </li>
             <li className={styles.servisesItem}>
-              <button className={styles.servisesBtn}>
-                <a href='' className={styles.servisesA}>
-                  View All FAQ’s
-                </a>
-              </button>
+              <a href="#questions" className={`${styles.servisesBtn} ${styles.servisesA}`}>
+                View All FAQ’s
+              </a>
             </li>
           </ul>
         </div>

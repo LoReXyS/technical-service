@@ -3,19 +3,20 @@
   padding: 50px 0;
 }
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-
-  display: flex;
 }
 .btns {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
-  justify-content: center;
+  margin: 0;
 }
 .btnsBtn {
-  width: 300px;
+  width: 100%;
+  min-height: 180px;
 
   display: flex;
   flex-direction: column;
@@ -25,12 +26,42 @@
   padding: 20px;
 
   box-sizing: border-box;
-  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border: 1px solid var(--Grey-15, rgba(38, 38, 38, 1));
   border-radius: 12px;
   background: var(--Grey-10, rgba(26, 26, 26, 1));
   transition: 0.5s ease all;
+  color: var(--Absolute-White, rgba(255, 255, 255, 1));
+  text-decoration: none;
 }
 .btnsBtn:hover {
-  border: 1px solid var(--Grey/15, rgba(38, 38, 38, 1));
+  border: 1px solid var(--Grey-15, rgba(38, 38, 38, 1));
   background: var(--Grey-15, rgba(38, 38, 38, 1));
+}
+
+@media (max-width: 900px) {
+  .btns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 28px 0;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
+
+  .btns {
+    gap: 10px;
+  }
+
+  .btnsBtn {
+    min-height: 140px;
+    padding: 14px 10px;
+    gap: 12px;
+    text-align: center;
+  }
 }

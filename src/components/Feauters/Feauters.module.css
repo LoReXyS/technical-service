@@ -1,7 +1,7 @@
 .div {
-  /* Container */
-  width: 600px;
-  height: 621px;
+  width: 100%;
+  min-width: 0;
+  min-height: 621px;
   /* Автолейаут */
   display: flex;
   flex-direction: column;
@@ -43,8 +43,9 @@
 }
 .li {
   /* Container */
-  width: 450px;
-  height: 63px;
+  width: 100%;
+  min-height: 63px;
+  height: auto;
   /* Автолейаут */
   display: flex;
   flex-direction: row;
@@ -60,4 +61,22 @@
     rgba(25.5, 25.5, 25.5, 1) 0%,
     rgba(25.5, 25.5, 25.5, 0) 100%
   );
+}
+
+@media (max-width: 520px) {
+  .div {
+    min-height: 0;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .li {
+    align-items: flex-start;
+    height: auto;
+    padding: 14px 16px;
+  }
+
+  .p {
+    font-size: 16px;
+  }
 }

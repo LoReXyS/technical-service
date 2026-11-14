@@ -1,13 +1,13 @@
 import styles from './Elevate.module.css';
-import img1 from './img/Icon1';
-import img2 from './img/Icon2';
-import img3 from './img/Icon3';
-import img4 from './img/Icon4';
+import img1 from './img/Icon1.png';
+import img2 from './img/Icon2.png';
+import img3 from './img/Icon3.png';
+import img4 from './img/Icon4.png';
 
 export default function Elevate() {
   return (
     <>
-      <section>
+      <section className={styles.section}>
         <h2></h2>
         <div className={styles.container}>
           <div className={styles.content}>
@@ -22,19 +22,25 @@ export default function Elevate() {
             <ul className={styles.list}>
               <li className={styles.item}>
                 <img src={img1} alt="" />
-                <p>Find What Service You Need</p>
+                <p className={styles.itemDescription}>
+                  Find What Service You Need
+                </p>
               </li>
               <li className={styles.item}>
                 <img src={img2} alt="" />
-                <p> Value Price</p>
+                <p className={styles.itemDescription}>Value Price</p>
               </li>
               <li className={styles.item}>
                 <img src={img3} alt="" />
-                <p>Effortless Service Management</p>
+                <p className={styles.itemDescription}>
+                  Effortless Service Management
+                </p>
               </li>
               <li className={styles.item}>
                 <img src={img4} alt="" />
-                <p>Smart Service, Informed Decisions</p>
+                <p className={styles.itemDescription}>
+                  Smart Service, Informed Decisions
+                </p>
               </li>
             </ul>
           </div>

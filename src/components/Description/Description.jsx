@@ -8,7 +8,7 @@ export default function Description() {
         <p className={styles.paragraph}>
           Chosen Technical Services, where excellence meets innovation in Dubai.
           We take pride in offering a diverse array of technical solutions
-          designed to elevate your living or working environment. 
+          designed to elevate your living or working environment.
         </p>
         <ul className={styles.list}>
           <li className={styles.li}>

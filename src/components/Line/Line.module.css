@@ -12,9 +12,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 .listFirst {
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 .firstTxt {
   color: var(--Absolute-White, rgba(255, 255, 255, 1));
@@ -30,7 +35,21 @@
 
 .listSecond {
   display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 .itemSecond {
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .listFirst {
+    justify-content: center;
+    text-align: center;
+  }
 }
